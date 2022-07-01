@@ -1,0 +1,4 @@
+﻿Punch-Drunk Love,2002,Paul Thomas Anderson,DVD,False
+Thief,1981,Michael Mann,Blu Ray,False
+Vertigo,1958,Alfred Hitchcock,4K Blu Ray,False
+Blow Out,1981,Brian De Palma,Blu Ray,True
