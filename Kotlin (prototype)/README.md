@@ -1,4 +1,7 @@
-Initial prototype functional as Kotlin Android app.
+# Initial prototype functional as Kotlin Android app.
+
+![Screenshot of main, detailed and add activityes](/assets/images/moviecollectionapp.png)
+
 - Main activity uses RecyclerView with adapter to display MutableList of custom Movie class
 - Uses Intents to navigate between Main, Detailed Info, Add Movie and Edit Movie activities
 - Uses a Toolbar with overflow menu for navigation options
