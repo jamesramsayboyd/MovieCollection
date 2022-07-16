@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddMovieActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/label_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_movie_title"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_toolbar"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/label_title"
+        app:layout_constraintTop_toBottomOf="@id/add_toolbar"
+        tools:text="enter title"
+        android:padding="20dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/label_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_movie_year"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_title"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/edit_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@id/label_year"
+        app:layout_constraintTop_toBottomOf="@id/edit_title"
+        tools:text="enter year"
+        android:padding="20dp"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/label_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_movie_director"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_year"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/edit_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@id/label_director"
+        app:layout_constraintTop_toBottomOf="@id/edit_year"
+        tools:text="enter dir"
+        android:padding="20dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/label_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="@string/add_movie_format"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_director"
+        android:padding="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/label_format"
+        app:layout_constraintTop_toBottomOf="@id/edit_director"
+         >
+        <RadioButton
+            android:id="@+id/radio_button_DVD"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:text="@string/radio_button_dvd" />
+        <RadioButton
+            android:id="@+id/radio_button_blu"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:text="@string/radio_button_blu" />
+        <RadioButton
+            android:id="@+id/radio_button_4K"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:text="@string/radio_button_4k" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_favourite"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_group"
+        android:padding="20dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/button_add_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_favourite"
+        android:text="@string/action_add"
+        android:textSize="24sp"
+        android:padding="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

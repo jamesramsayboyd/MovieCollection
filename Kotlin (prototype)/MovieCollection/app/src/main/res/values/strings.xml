@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Movie Collection</string>
+    <string name="title">TITLE</string>
+    <string name="overflow_title">OVERFLOW</string>
+    <string name="action_add">ADD</string>
+    <string name="action_edit">EDIT</string>
+    <string name="action_delete">DELETE</string>
+    <string name="action_sort_title">SORT (Title A-Z)</string>
+    <string name="action_sort_year">SORT (Year)</string>
+    <string name="action_sort_director">SORT (Director A-Z)</string>
+    <string name="add_movie">ADD MOVIE</string>
+    <string name="add_movie_title">TITLE</string>
+    <string name="add_movie_year">YEAR</string>
+    <string name="add_movie_director">DIRECTOR</string>
+    <string name="add_movie_format">FORMAT</string>
+    <string name="add_movie_favourite">FAVOURITE</string>
+    <string name="radio_button_dvd">DVD</string>
+    <string name="radio_button_blu">BLU RAY</string>
+    <string name="radio_button_4k">4K UHD</string>
+    <string name="switch_favourite">FAVOURITE</string>
+</resources>
